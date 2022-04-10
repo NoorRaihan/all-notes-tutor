@@ -133,3 +133,215 @@ number = int(7) #now it 7
 number = float(7) #now it 7.0
 ```
 
+
+#### 5.Playing with numbers and operators
+
+Check which number is minimum
+```python
+print(min(4,7)) #output would be 4
+```
+
+Check which number is maximum
+```python
+print(max(4,7)) #output would be 7
+```
+
+Round up the decimal
+```python
+print(round(3.5)) #output would be 4
+```
+
+Using operater in python
+```python
+x = 3
+y = 6
+
+print(x + y) #output 9
+print(x - y) #output -1
+print(y / x) #output 2.0
+print(y % x) #output 0
+
+```
+
+#### 6. Conditional If..Else
+In conditional statement in python, indention are very important and wrong indention can return to syntax error.
+
+If statement
+```python
+a = 20
+b = 150
+
+if b > a:
+	print("b is larger than a")
+
+b is larger than a
+```
+
+elif statement
+```python
+a = 20
+b = 20
+
+if b > a:
+	print("b is larger than a")
+elif b == a:
+	print("b is equal to a")
+
+#output would be "b is equal to a"
+```
+
+else statement
+```python
+a = 200
+b = 50
+
+if b > a:
+	print("b is larger than a")
+elif b == a:
+	print("b is equal to a")
+else
+	print("a is larger than b")
+
+#output would be "a is larger than b"
+```
+
+And statement (both condition must return true)
+```python
+a = 200  
+b = 33  
+c = 500 
+
+if a > b and c > a:  
+	print("Both conditions are True")
+```
+
+Or statement
+```python
+a = 200  
+b = 33  
+c = 500  
+
+if a > b or a > c:  
+	 print("At least one of the conditions is True")
+```
+
+Nested if
+```python
+x = 41  
+  
+if x > 10:  
+	 print("Above ten,")  
+	 if x > 20:  
+		 print("and also above 20!")  
+	 else:  
+		 print("but not above 20.")
+```
+
+Pass statement (used when there is nothing to put in if statement and wanted to avoid any error)
+
+```python
+a = 33  
+b = 200  
+  
+if b > a:  
+	 pass
+```
+
+#### 7. User input
+User input is very important in every programming language. This is how we receive user input in python3. 
+**Remind: input in python always return as string**
+
+```python
+name = input("What is your name: ")
+print("Your name is", name)
+```
+
+#### 8. Loop
+There is two type of loops in python.
+- **while** loops
+- **for** loops
+
+##### While Loop
+while loops is a loops that can execute as long as the condition is **true**.
+```python
+i = 1 #declare the counter
+
+while i < 6: #condition for while loop
+	print(i)
+	i += 1 #update the counter
+```
+
+break statement (it will stop the loop if the condition is true)
+```python
+i = 1
+
+while i < 6:
+	print(i)
+	
+	if i == 3: #if i is equal to 3 then the loop will stop immediately
+		break
+		
+	i += 1
+```
+
+continue statement (it will stop the currect loop status and continue to the next loop)
+```python
+i = 0
+
+while i < 6:
+
+	i += 1
+	if i == 3: #if i is equal to 3 then it will continue to next loop
+		continue
+		
+	print(i)
+```
+
+##### For loops
+
+for loop is used to iterate over sequence such as list and arrays
+```python
+cars = ["Proton", "Honda", "Toyota"]
+
+for x in cars:
+	print(x)
+```
+
+interestingly it also can be used to iterate through string
+```python
+for x in "proton":
+	print(x)
+```
+
+break statement also can be used in for loops
+```python
+cars = ["Proton", "Honda", "Toyota"]
+
+for x in cars:
+	print(x)
+	if x == "Honda":
+		break
+```
+
+same goes to the continue statement
+```python
+cars = ["Proton", "Honda", "Toyota"]
+
+for x in cars:
+	if x == "Honda":
+		continue
+	print(x)
+```
+
+if we have our own counter and range, we can use **range()** in for loops as counter
+```python
+#it will loop 6 times
+for x in range(6):
+	print(x)
+```
+
+we also can put starting point using range ( range(start, end) )
+```python
+for x in range(2, 6):
+	print(x) #2,3,4,5
+```
