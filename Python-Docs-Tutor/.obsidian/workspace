@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs.md.md",
+            "file": "docs.md",
             "mode": "source",
             "source": false
           }
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs.md.md",
+                "file": "docs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,6 +90,7 @@
   },
   "active": "8d1f255c221ca9ff",
   "lastOpenFiles": [
+    "docs.md",
     "docs.md.md"
   ]
 }
