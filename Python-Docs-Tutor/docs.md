@@ -8,13 +8,13 @@
 2. After finish the downloading, run the executable Installer and make sure to **tick on *Add Python 3.x to the path***
 
 
-![[Pasted image 20220410133556.png]]
+![[img1.png]]
 
 3. Verify if the Python is successfully installed.
 	- Open the command prompt.
 	- Type 'python' and press enter.
 	- The output should be like this if the python is successfully installed.
-	![[Pasted image 20220410133842.png]]
+	![[img2.png]]
 
 4. Verify if pip is executable through the python command.
 	- Open the command prompt.
@@ -23,7 +23,7 @@
 	python -m pip -V
 	```
 	- If the installation successfull, you may see the pip version displayed as below.
-	![[Pasted image 20220410134406.png]]
+	![[img3.png]]
 
 5. Now you have successfully install python in your windows machine.
 
@@ -344,4 +344,41 @@ we also can put starting point using range ( range(start, end) )
 ```python
 for x in range(2, 6):
 	print(x) #2,3,4,5
+```
+
+
+#### Function
+Function can be implemented in python by using **def** (definition)
+```python
+def hello():
+	print("hello")
+
+hello() #output is "hello"
+
+```
+
+def in python also can received any parameter
+```python
+def hello(text):
+	print(text)
+
+hello("hello")
+
+```
+
+or return anything
+```python
+def hello():
+	return "hello"
+
+print(hello()) #output is "hello"
+
+```
+
+```python
+def isTrue():
+	return True
+
+print(isTrue()) #output is True
+
 ```
